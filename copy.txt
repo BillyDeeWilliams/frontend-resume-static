@@ -1,0 +1,74 @@
+William Madden - Front End Developer - excellence and elegance
+Will Madden
+Jr. Web Developer
+experience
+Front-End/ Technical Support
+Dealer Spike
+
+Nov 2017 - Present
+Wilsonville, Oregon
+Accomplishments and responsibilities
+
+Research, develop, and implement, plug-and-play Shopify eCommerce integration using Vue/Vuex to leverage the Shopify storefront Graphql API solution for the entire platform. The result was Dealer SPike's first third party integration that leverages the Graphql API standard.
+
+ Developed training curriculum and inhouse-developer documentation for open-source analytics platform Matomo (formerly Piwik). Developed strategies for leveraging the Matomo JS API for creating custom conversion tracking to improve the accuracy and integrity of collected data to
+
+Regularly exceeds KPI targets. Recognized for being among the top 3 performers in the support department for the last 5 months running.
+
+Recent Projects
+
+Dealer Spike Shopify Integration
+Live Example | Github repo
+
+A Vue/Vues Single-Page-Application / platform-feature for integration with the Shopify Storefront GraphQl API. Above is a link to a live instance and to the git hub repo I set up to showcase the work. Dealerspike owns this code, and of course, no sensitive or proprietary code has been included in the repo.
+
+GraphQL Server
+
+https://limitless-cliffs-60173.herokuapp.com/
+ A quick Express-Graphql API/server deployed to Heroku. Hit the '/' endpoint with a tool like Graphiql to query the API and see the documentation
+
+Unsplash Image Finder
+
+www.unsplash-react-imgage-finder.netlify.com
+ A simple React application for accessing the public 'unsplash' image API. Demonstrates Functional as well as Class-based component architecture. Simple and intuitive UI/UX leveraging CSS stylers like background-size and the newer Flex-box properties to accommodate varying image sizes and aspect-ratios for a uniform,  responsive view.
+
+
+File Watcher
+https://github.com/BillyDeeWilliams/netwatcher-client-server
+
+Client and Server code base for Bash CLI NodeJs app that leverages web-socket connections to monitor remote file structure for file changes
+
+
+Objective Summary
+ I am awesome.
+                    You should hire me.
+
+
+technologies
+
+coding
+Node.js
+express
+                REST
+GraphQL
+HTML5
+CSS3
+JS/ecma2015
+jQuery
+React
+Redux
+Vue
+vuex
+LESS/SASS
+
+design
+photoshop
+gimp
+analog 2d
+
+Project management/deployment
+Git
+Glip / Slack
+Trello
+Heroku
+Netlify
