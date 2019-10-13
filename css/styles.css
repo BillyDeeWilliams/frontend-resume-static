@@ -30,17 +30,6 @@ body{
 
 
 }
-.project{
-    max-width: 85%;
-    margin: 0 auto;
-}
-li.job-entry{
-    display: flex;
-    justify-content: center;
-}
-.job-entry div.job-card{
-    max-width: 85%;
-}
 .name{
     color: darkblue;
 font-size: 45px;
