@@ -184,3 +184,6 @@ h4.project-link {
     overflow: hidden;
     white-space: nowrap;
 }
+li.project {
+    max-width: 100%;
+}
