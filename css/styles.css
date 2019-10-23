@@ -83,11 +83,11 @@ width: 100%;
 
 
 div.left-col{
-    width: 60%;
+    width: 65%;
 
 }
 div.right-col{
-    width: 40%;
+    width: 30%;
 }
 
 div.column section {
@@ -167,10 +167,10 @@ span.date-range{
 text-transform: uppercase;
 
 }
-
 h3.project-title {
     margin: 10px;
-    color: orange;
+    color: #3c3232;
+    font-size: 1.5rem;
 }
 #recent-project .job-card{
    border: 1px solid black;
@@ -185,5 +185,12 @@ h4.project-link {
     white-space: nowrap;
 }
 li.project {
-    max-width: 100%;
+    width: 90%;
+}
+@media(print-sheet){
+h4.project-link{
+
+    display: none;
+}
+
 }
