@@ -187,7 +187,11 @@ h4.project-link {
 li.project {
     width: 90%;
 }
-@media(print-sheet){
+section.column-header {
+
+    height: 260px;
+}
+@media print{
 h4.project-link{
 
     display: none;
