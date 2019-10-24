@@ -192,9 +192,7 @@ section.column-header {
     height: 260px;
 }
 @media print{
-h4.project-link{
-
-    display: none;
-}
-
+    h4.project-link{
+        display: none;
+    }
 }
