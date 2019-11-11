@@ -196,3 +196,12 @@ section.column-header {
         display: none;
     }
 }
+@media(min-width: 768px){
+    main{
+        width: 80%;
+        margin: 0 auto;
+        }
+}
+@media(min-width: 991px){
+    main{ width: 70%;}
+}
