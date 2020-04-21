@@ -108,18 +108,17 @@ div.column section {
 
  }
  li.tech-subgroup > ul > li{
-     width: 30%;
+     width: 40%;
      font-size: 20px;
      margin: 10px;
      padding: 10px;
      text-align: center;
      text-transform: uppercase;
-          font-weight: 500;
-     background-color: darkgray;
+     font-weight: 500;
  }
  li.tech-subgroup.languages > ul > li{
      font-weight: 500;
-     width: 30%;
+     width: 40%;
      align-items: center;
      margin: 10px;
      padding: 10px;
