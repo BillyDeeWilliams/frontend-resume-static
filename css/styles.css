@@ -23,8 +23,9 @@ padding: 10px;
 }
 
 ul.contact-info> li{
-width: 50%;
+    width: 50%;
     margin: 10px -10px;
+    font-size: 14px;
 }
 body{
 
