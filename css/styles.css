@@ -195,6 +195,11 @@ section.objective-summary > p {
     padding: 16px;
     font-size: 18px;
 }
+ul.exp-jobs {
+    margin-top: 15px;
+}
+
+
 @media print{
     h4.project-link{
         display: none;
