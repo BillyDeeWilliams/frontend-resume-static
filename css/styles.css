@@ -192,8 +192,8 @@ section.column-header {
 }
 
 section.objective-summary > p {
-    padding: 16px;
-    font-size: 18px;
+    font-size: 16px;
+        margin-top: 10px;
 }
 ul.exp-jobs {
     margin-top: 15px;
