@@ -133,8 +133,7 @@ div.column section {
          width: auto;
          font-size: 28px;
          padding: 5px 0 5px 20px;
-         overflow: hidden;
-         background-color: lightgray;
+
  }
 #technologies{
     width: 100%;
@@ -190,6 +189,11 @@ li.project {
 section.column-header {
 
     height: 260px;
+}
+
+section.objective-summary > p {
+    padding: 16px;
+    font-size: 18px;
 }
 @media print{
     h4.project-link{
