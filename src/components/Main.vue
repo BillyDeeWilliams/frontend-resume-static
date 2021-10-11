@@ -54,13 +54,6 @@
           <section id="recent-project" className="recent-project-section">
             <h2 className="section-heading">Recent Projects</h2>
             <ul className="recent-project">
-              {/*<li class="project">
-                            <div class="job-card">
-                                <h3 class="project-title">Dealer Spike Shopify Integration</h3>
-                                <h4 class="project-link"><a href="#/">Live Example | Github repo</a></h4>
-                                <p class="project-description">A Vue/Vues Single-Page-Application / platform-feature for integration with the Shopify Storefront GraphQl API. Above is a link to a live instance and to the git hub repo I set up to showcase the work. Dealerspike owns this code, and of course, no sensitive or proprietary code has been included in the repo.</p>
-                            </div>
-                        </li>*/}
               <li className="project">
                 <div className="job-card">
                   <h3 className="project-title">GraphQL Server</h3>
@@ -228,7 +221,7 @@ margin: 0 15px;
 section.left-column-header{
     justify-content: center;
 }
-main{
+.resume{
 flex-wrap: wrap;
 display: flex;
 width: 100%;
