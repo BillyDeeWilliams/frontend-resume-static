@@ -24,22 +24,24 @@ export default {
   },
   data() {
     return {
-    //   isLoading: true,
+      isLoading:  this.$store.showCover,
     };
   },
   computed: {
     // ...mapGetters(["getLookingForGroups"]),
   },
   methods: {
-    toggleSideBar() {
-    //   this.$store.commit("toggleSideBar");
+	toggleCover() {
+      this.$store.commit("toggleCover");
     },
+  
   },
   async mounted() {
     // set loading screen
-    // this.isLoading = true;
-    // // await this.$store.dispatch("fetchLookForItems");
-    // this.isLoading = false;
+  setTimeout(function(){
+       this.isLoading = false; 
+       console.log("isLoading: " + this.isLoading)
+       }, 5000);
   },
 };
 </script>
@@ -80,10 +82,12 @@ main {
 		-0.15em -0.15em 0.15em var(--shade1) inset,
 		1em 1em 2em var(--shade1), 
 		-1em -1em 2em var(--shade4);
+		margin: 0 auto;
 	margin-bottom: 3em;
 	position: relative;
 	width: 12em;
 	height: 12em;
+
 }
 .preloader__square {
 	animation: smallPopOut1 var(--dur1) linear, popInOut var(--dur2) var(--dur1) linear infinite;
