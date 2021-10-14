@@ -525,6 +525,7 @@ ul.contact-info> li{
 }
 body{
     background-color: lightgrey;
+    font-size: 18px;
 
 }
 h1,h2, #technologies h3,  #technologies li{
@@ -655,6 +656,9 @@ div.column section {
     fill: #5f01a7 !important;
   
 }
+#exp .job-card h5{
+    margin-top:10px;
+}
 #technologies i, #technologies svg, #technologies svg path {
     color: #5f01a7;
     fill: #5f01a7 !important;
@@ -716,7 +720,7 @@ div.column section.objective-summary{
     text-align: center;
 }
 section.objective-summary > p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: -25px;
 
 }
