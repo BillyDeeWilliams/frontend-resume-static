@@ -1,4 +1,5 @@
         <template>
+        <div>
         <div className="resume">
   <div className="column left-col col-two-thirds">
           <section className="column-header">
@@ -128,6 +129,7 @@
               </li>
             </ul>
           </section>
+        </div>
         </div>
         </div>
         </template>
@@ -359,6 +361,8 @@ ul.exp-jobs {
 @media(min-width: 991px){
     main{ width: 70%;}
 }
+
+
 
 
     </style>

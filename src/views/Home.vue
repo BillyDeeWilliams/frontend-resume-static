@@ -1,8 +1,9 @@
 <template>
 
-    <Loading  v-if="isLoading" />
-
-    <Main v-if="!isLoading"/>
+    <Loading :isLoading="isLoading" />
+<transition name="fade">
+    <Main className="fade" v-if="!show"/>
+</transition>
   
 </template>
 
@@ -12,29 +13,75 @@ import Loading from '@/components/Loading.vue';
 
 export default {
   name: 'Home',
+  props: ["isLoading"],
   components: {
     Main,
     Loading
+    
 },
  data() {
     return {
-      isLoading:  this.$store.state.showCover,
-    };
+       show:  true}
   },
   computed: {
     // ...mapGetters(["getLookingForGroups"]),
   },
   methods: {
-	toggleCover() {
-      this.$store.commit("toggleCover");
-        console.log("isLoading: " + this.isLoading)
-    },
+	fadeMe: function() {
+      this.show = !this.show
+    }
   
   },
   async mounted() {
-    // set loading screen
-      setTimeout(this.toggleCover()
-       , 5000);
+    var that = this;
+
+      setTimeout(function() {
+        that.show = false;
+      }, 5000); // hide the message after 3 seconds
    },
 };
 </script>
+
+<style scoped> 
+.fade{
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
