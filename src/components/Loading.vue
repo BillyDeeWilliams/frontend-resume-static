@@ -1,5 +1,6 @@
 <template>
-  <div :class="{ loading: true, fadeout: !isLoading }">
+   <div :class="{ loading: true, fadeout: !isLoading }">
+ className="loading">
     <div className="preloader">
 		<div className="preloader__square"></div>
 		<div className="preloader__square"></div>
@@ -24,21 +25,20 @@ export default {
   },
   data() {
     return {
-    //   isLoading: true,
+     // isLoading:  true,
     };
   },
   computed: {
     // ...mapGetters(["getLookingForGroups"]),
   },
   methods: {
-	toggleCover() {
-      this.$store.commit("toggleCover");
-    },
+	// toggleCover() {
+    //   this.$store.commit("toggleCover");
+    // },
   
   },
   async mounted() {
-    // set loading screen
-  setTimeout(function(){
+    setTimeout(function(){
        this.isLoading = false; 
        console.log("isLoading: " + this.isLoading)
        }, 5000);
@@ -74,10 +74,6 @@ body {
 main {
 	margin: auto;
 }
-.loading{
-	position: relative;
-		width: 100%;
-}
 .preloader {
 	animation: largePopOut var(--dur1) linear;
 	border-radius: 50%;
@@ -91,11 +87,6 @@ main {
 	position: relative;
 	width: 12em;
 	height: 12em;
-	z-index: 999;
-	position: absolute;		
-	top: 60px; 
-	left:40%;
-
 
 }
 .preloader__square {
@@ -130,7 +121,6 @@ main {
 .status {
 	animation: fadeIn var(--dur1) linear forwards;
 	text-align: center;
-	/* margin-top: 60%; */
 }
 .status__dot {
 	animation: appear1 var(--dur1) var(--dur1) steps(1,start) infinite;
@@ -530,18 +520,5 @@ main {
 		--shade3: #4a4e5a;
 		--shade4: #686e7e;
 	}
-}
-
-
-.fadeout {
-  animation: fadeout 5s forwards;
-}
-
-
-@keyframes fadeout {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 </style>
