@@ -8,7 +8,8 @@
 </head>
 <body id="app">
     
-<div class="container"><a @click="start"  class="border-animation" href="#">
+<div class="container">
+    <a @click="start"  class="border-animation" href="#">
     <div class="border-animation__inner">PLAY</div></a></div>
 </body>
 </html>
@@ -92,20 +93,20 @@
       position: absolute;
       background: var(--color);
     }
-    .border-animation:hover:before, .border-animation:active:before {
+    .border-animation:hover:before, .border-animation:active:before, .border-animation:active:focus  {
       -webkit-animation: beforeBorders var(--animation-speed) forwards ease-in-out;
               animation: beforeBorders var(--animation-speed) forwards ease-in-out;
     }
-    .border-animation:hover:after, .border-animation:active:after {
+    .border-animation:hover:after, .border-animation:active:after, .border-animation:active:focus {
       -webkit-animation: afterBorders var(--animation-speed) forwards ease-in-out;
               animation: afterBorders var(--animation-speed) forwards ease-in-out;
     }
-    .border-animation:hover, .border-animation:active {
+    .border-animation:hover, .border-animation:active , .border-animation:focus {
       -webkit-animation: borderColors var(--animation-speed) steps(1) forwards;
               animation: borderColors var(--animation-speed) steps(1) forwards;
       outline: none;
     }
-    .border-animation:hover .border-animation__inner, .border-animation:active .border-animation__inner {
+    .border-animation:hover .border-animation__inner, .border-animation:active .border-animation__inner, .border-animation:focus .border-animation__inner {
       -webkit-animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
               animation: background calc(var(--animation-speed) / 5 * 3) forwards ease-in-out;
       -webkit-animation-delay: calc(var(--animation-speed) / 5 * 2);
