@@ -24,7 +24,7 @@
    function handleStart (e){ 
      console.log(e);
        e.preventDefault;
-        let clicked = e.target;
+        let clicked = e.target.parentElement;
         if (!clicked.classList.contains('active')) {
             clicked.classList.add('active');
             // alert("remove faq display!");
@@ -86,7 +86,7 @@
     
     .border-animation {
       --border-width: 0.1em;
-      --animation-speed: 0.5s;
+      --animation-speed: 0.3s;
       --color: #ffffff;
       color: var(--color);
       position: relative;
