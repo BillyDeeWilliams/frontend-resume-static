@@ -15,8 +15,10 @@
 </html>
 
 <script>
+  window.onload=function(){
     let button = document.querySelector('a.border-animation');
     button.addEventListener("touchstart", handleStart, false);
+  }
    function handleStart (e){ 
        e.preventDefault;
         let clicked = e.target;
