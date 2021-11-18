@@ -17,9 +17,11 @@
 <script>
   window.onload=function(){
     let button = document.querySelector('a.border-animation');
-    button.addEventListener("touch", handleStart, false);
+    button.addEventListener("touch", handleStart);
+    button.addEventListener("click", handleStart);
   }
    function handleStart (e){ 
+     console.log(e);
        e.preventDefault;
         let clicked = e.target;
         if (!clicked.classList.contains('active')) {
