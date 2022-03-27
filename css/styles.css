@@ -727,7 +727,18 @@ section.objective-summary > p {
 ul.exp-jobs {
     margin-top: 10px;
 }
-
+pre{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin:  auto;
+	margin-bottom: 10px;
+  overflow: hidden;
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  max-width: 250px;
+  padding-bottom: 20px;
+  max-height: 250px;
+}
 
 @media print{
     h4.project-link{
