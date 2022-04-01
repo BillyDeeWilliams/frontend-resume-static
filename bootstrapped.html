@@ -4,33 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
   <link rel='icon' href='favico.ico' type='image/x-icon'/ >
+
+<!-- Jquery 3.5.1 CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
   <!--Normailez CSS from CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-  <!--bootstrap css & JS from CDN v4.6.1 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link id="dark-theme-style" rel="stylesheet" />
+
 
 
    <!-- FA 5, devIcons and iconify CDNs -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
- 
-  
+
+   <script type="text/javascript">
+   const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+   const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+   // dank theme bootstrap style cdn
+   const DARK_THEME_PATH = "https://bootswatch.com/5/cyborg/bootstrap.min.css";
+   let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+   </script>
+    
    <title>William Madden - Front End Developer - excellence and elegance</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Eighth navbar example">
+  <body >
+    <nav class="navbar navbar-expand-md navbar-light bg-light px-2"
       <div class="container">
-        <a class="navbar-brand" href="#">WILLIAM<hr> MADDEN</a>
+        <a class="navbar-brand" href="#">WILLIAM
+          <hr class="my-0"> MADDEN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
   
         <div class="collapse navbar-collapse" id="navbarHeader">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
@@ -45,57 +61,95 @@
             </li>
             
           </ul>
-          <button type="button" id="theme" class="btn btn-default" onclick="themeChange()"> <i class="fa-regular fa-moon"></i> </button>
+          <a
+        href="javascript:void()"
+        class="btn btn-outline-info btn-lg ml-auto font-weight-bold"
+        id="theme-toggler"
+        onclick="toggleTheme()">
+         <i class="fas fa-cun"></i> </a>
 
         </div>
       </div>
     </nav>
-    <div class="container">
-     
-        <div id="About" class="hero col-lg-8 col-12 px-4 py-5 my-5 mx-auto d-flex flex-wrap">
-          <div class="col-lg-5 text-center">
+    <div class="container-fluid  my-0 vh-100 ">
+      <div class="container bg-light text-dark vh-100">
+        <div id="About" class="hero col-lg-8 col-12 px-4 py-5 my-5 mx-auto d-flex flex-wrap justify-content-sm-around">
+          <div class="col-lg-8 text-center">
             <h1 class="display-5 fw-bold">Hi I'm Will</h1>
         
               <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
         
           </div>
-          <div class="col-lg-3 hero-img-wrapper">
-            <img src="./images/wdm-full-size-pwo.jpg" class="hero-img"/>
+          <div class="col-lg-4 hero-img-wrapper">
           </div>
-            <div class="w-100 gap-2 d-sm-flex justify-content-sm-space-evenly">
-              <a href=""><i class="fa-regular fa-moon"></i>one</a> 
-              <a href=""><i class="fa-regular fa-sun"></i> two</a>
-              <a href=""><i class="fa-regular fa-moon"></i>three</a>
-              <a href=""><i class="fa-regular fa-sun"></i> four</a>
+            <div class="w-100 gap-2 d-sm-flex justify-content-sm-evenly">
+              <a href=""><i class="far fa-moon"></i>one</a> 
+              <a href=""><i class="far fa-sun"></i> two</a>
+              <a href=""><i class="far fa-moon"></i>three</a>
+              <a href=""><i class="far fa-sun"></i> four</a>
             </div>
         
         </div>
-    
+      </div>
 
     </div>
   
-</body>
-
 
 <style>
+
+
 .hero-img-wrapper{
   padding: 5px;
+  background-image: url(./images/wdm-full-size-pwo.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.hero-img{
-width: 250px;
-height: 250px;
-min-width: 80%;
-min-height: 80%;
-border-radius: 50%;
-
+html body nav i.fas{
+  color: white;
 }
-
+html body nav i.fa-moon{
+  color: #666;
+}
 </style>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
 <script>
-  function themeChange() {
-        $('#theme').find("i").toggleClass("fa-moon fa-sun");
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
+}
+
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
   }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
+
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "<i class='fas fa-sun'></i>";
+
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "<i class='fas fa-moon'></i>";
+
+}
 </script>
+
+</body>
+
 </html>
