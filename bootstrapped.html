@@ -37,7 +37,7 @@
    <title>William Madden - Front End Developer - excellence and elegance</title>
   </head>
   <body >
-    <nav class="navbar navbar-expand-md navbar-light bg-light px-2"
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2"
       <div class="container">
         <a class="navbar-brand" href="#">WILLIAM
           <hr class="my-0"> MADDEN</a>
@@ -71,25 +71,40 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid  my-0 vh-100 ">
-      <div class="container bg-light text-dark vh-100">
-        <div id="About" class="hero col-lg-8 col-12 px-4 py-5 my-5 mx-auto d-flex flex-wrap justify-content-sm-around">
-          <div class="col-lg-8 text-center">
-            <h1 class="display-5 fw-bold">Hi I'm Will</h1>
+    <div class="container-fluid  my-0 h-100 ">
+      <div class="container bg-light text-dark h-100">
+        <div id="About" class=" col-10 px-4 pt-5 mt-5 mx-auto d-flex flex-wrap justify-content-sm-around h-100">
+          <div class="col-lg-8 pt-5 ">
+            <h1 class="display-5 px-5 fw-bold text-left">Hi, I'm Will</h1>
         
-              <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+              <p class="lead mb-4 p-3 text-center"> A highly driven web development professional with years of experience, always on the Lookout for new exciting challenges and opportunities to explore, learn, and grow. As a developer I seek to affect meaningful change in our world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
+
         
           </div>
-          <div class="col-lg-4 hero-img-wrapper">
+          <div class="col-lg-4 hero-img-wrapper mt-5">
           </div>
-            <div class="w-100 gap-2 d-sm-flex justify-content-sm-evenly">
-              <a href=""><i class="far fa-moon"></i>one</a> 
-              <a href=""><i class="far fa-sun"></i> two</a>
-              <a href=""><i class="far fa-moon"></i>three</a>
-              <a href=""><i class="far fa-sun"></i> four</a>
+            <div class="w-100 gap-2 d-sm-flex justify-content-sm-evenly contact-info">
+              <a target="_blank" href="sms://503-708-7753" class="phone">
+                <i class="fas fa-phone"></i>503-708-7753
+              </a>
+              <a target="_blank" href="https://www.portlandoregon.gov/" class="location">
+                <i class="fas fa-globe-americas"></i>PDX, OR
+              </a>
+              <a target="_blank" href="https://github.com/BillyDeeWilliams" class="github">
+                <i class="fab fa-github"></i>Github Account
+              </a>
+              <a target="_blank" href="mailto:madden.william.d@gmail.com" class="gmail">
+                <i class="fas fa-envelope"></i>madden.william.d@gmail.com
+              </a>
             </div>
         
         </div>
+        <div class="container bg-light text-dark h-100">
+        <div id="Resume" class="col-10 mx-auto py-5 my-5 h-100">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem enim ad aperiam quo nisi tempora reiciendis alias doloribus facere voluptatum magnam explicabo, suscipit, a esse aut animi praesentium minus?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, cum? Temporibus dolore maxime consectetur fugiat, debitis fugit soluta aspernatur assumenda nam doloremque consequuntur exercitationem officia in! Quam facilis sunt laborum.</p>
+        </div>
+      </div>
       </div>
 
     </div>
@@ -105,6 +120,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 275px;
+    max-height: 275px;
 }
 
 html body nav i.fas{
@@ -112,6 +129,10 @@ html body nav i.fas{
 }
 html body nav i.fa-moon{
   color: #666;
+}
+html, body{
+  height: 100%;
+  max-height: 80vh;
 }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
