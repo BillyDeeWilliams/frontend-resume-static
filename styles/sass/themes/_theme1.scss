@@ -1,0 +1,68 @@
+
+html{
+  height: 100%;
+  body{
+    height: 100%;
+  
+    // nav-start
+    nav{
+      a.navbar-brand{
+        line-height: 1;
+      }
+      i.fas{
+        color: white;
+        &.fa-moon{
+          color: #666;
+        }
+      } 
+      #theme-toggler{
+        display: block;
+        margin-right: 0;
+        width: 50px;
+        outline: none;
+        box-shadow: none;
+        @media(min-width: 768px){
+          display: unset;
+        }
+      }
+    }
+    //nav-end
+    //hero-start
+    .hero-img-wrapper{
+      padding: 5px;
+      background-image: url('../../images/wdm-full-size-pwo.jpg');
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 150px;
+      height: 150px;
+      transition: all .3s ease-in-out;
+    
+      @media(min-width: 678px){
+        width: 250px;
+        height: 250px;
+        max-width: 250px;
+      } 
+    }
+    
+    .contact-info a{
+      text-align: center;
+      color: orange ; 
+    }
+
+    #home-wave{
+      height: 150px;
+      overflow: hidden;
+      left: 0px;
+  
+      svg > path{
+        fill:var(--secondary);
+      }
+    }
+    //hero-end
+
+    //body
+  }
+}
+

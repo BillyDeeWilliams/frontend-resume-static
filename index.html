@@ -1,285 +1,176 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <!--local favicon  -->
-        <link rel='icon' href='favico.ico' type='image/x-icon'/ >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel='icon' href='favico.ico' type='image/x-icon'/ >
 
-        <!--Normailez CSS from CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-        <!--bootstrap css & JS from CDN v4.6.1 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Normailez CSS from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+<!--   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-       
-        <!-- local stylesheet -->    <link rel="stylesheet" href="css\styles.css">
-        <!-- FA 5, devIcons and iconify CDNs -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-        <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+   <!-- FA 5, devIcons and iconify CDNs -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/flatly/bootstrap.min.css" integrity="sha512-NnOXwTfcNBeRenMzrDACGwxbThjRcI5H8jvM+VDKKkXA6wkAb2c0t1YgDXWmW2TNX1CUSe6Ma6HXYG2J1rBGDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link id="dark-theme-style" rel="stylesheet" />
+ 
 
+  <link rel="stylesheet" href="./styles/css/style.css" />
 
-        <title>William Madden - Front End Developer - excellence and elegance</title>
-    </head>
-    <body>
+   <script type="text/javascript">
+   const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
+   const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+   // dank theme bootstrap style cdn
+   const DARK_THEME_PATH = "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/darkly/bootstrap.min.css";
+   let isDark = LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+   </script>
+    
+   <title>William Madden - Front End Developer - excellence and elegance</title>
+  </head>
+  <body class="h-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2 py-0">
+      <!-- <div class="container"> -->
+        <a class="navbar-brand mx-2 py-0 fs-6 text-center" href="#">
+          WILLIAM<hr class="my-0 mx-auto w-75 p-0">
+          MADDEN<br>
+          <span><small class="font-weight-bold text-secondary">FRONTEND DEVELOPER</small></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarHeader">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-75 text-center justify-content-md-end">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#Demos">Demos</a>
+            </li>
+            
+          </ul>
+          <a
+        href="javascript:void()"
+        class="btn btn-lg ml-auto font-weight-bold"
+        id="theme-toggler"
+        onclick="toggleTheme()">
+         <i class="fas fa-sun"></i> </a>
 
-        <main>
-            <div class="column left-col col-two-thirds">
-                <section class="column-header">
-                <div class="header-info">
-                    <h1 class="name">William Madden</h1>
-                    <h2 class="position">Web Developer</h2>
-                    <ul class="contact-info">
-                        <li class="phone"><a target="_blank" href="sms://503-708-7753"><i class="fas fa-phone"></i>503-708-7753</a></li>
-                        <li class="location"><a target="_blank" href="https://www.portlandoregon.gov/"><i class="fas fa-globe-americas"></i>PDX, OR</a></li>
-                        <li class="github"><a target="_blank" href="https://github.com/BillyDeeWilliams"><i class="fab fa-github"></i>Github Account</a></li>
-                        <li class="gmail"><a target="_blank" href="mailto:madden.william.d@gmail.com"><i class="fas fa-envelope"></i>madden.william.d@gmail.com</a></li>
-                    </ul>
-                </div>
-            </section>
-                <section id="exp" >
-                    <h2 class="section-heading">experience</h2>
-                    <ul class="exp-jobs">
-                        <li class="job-entry">
-                            <div class="job-card">
-                                <h3>Front-End Developer</h3>
-                                <h4>Full Service Funnels</h4>
-                                <div class="exp-position-stats">
-                                    <span class="date-range"><i class="fa fa-calendar"></i>Oct 2021 - Jan 2022</span>
-                                    <span class="location"><a href="https://goo.gl/maps/nbi82hUmDCaAJNFD6"><i class="fas fa-map-marker"></i>Portland, Oregon</a></span>
-                                     - 
-                                    <span class="location">(contract)</span>
-                                </div>
-                                <h5>Accomplishments and responsibilities</h5>
-                                <ul class="job-highlights">
-                                    <li>Ceate and manage 1k+ web pages with a prprietary page-build platofrm built on grapes JS</li>
-                                    <li>Update and optimize exisintg content, as well as develop new site templates and fatures</li>
-                                    <li>Troubleshoot and solve integration issues</li>
-                                    <li>Data analysis and system optimization </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="job-entry">
-                            <div class="job-card">
-                                <h3>Lead Front-End Developer</h3>
-                                <h4>Schoolhouse Electric CO.</h4>
-                                <div class="exp-position-stats">
-                                    <span class="date-range"><i class="fa fa-calendar"></i>Jan 2020 - Feb 2021</span>
-                                    <span class="location"><a href="https://goo.gl/maps/FCGFPkUmFYsZ7Y1h8"><i class="fas fa-map-marker"></i>Portland, Oregon</a></span>
-                                </div>
-                                <h5>Accomplishments and responsibilities</h5>
-                                <ul class="job-highlights">
-                                    <li>Maintain and manage Shopify eCommerce website for major producer and distributor of high-end  heirloom home lighting and appliances</li>
-                                    <li>Update and optimize exisintg content, as well as develop new site fatures</li>
-                                    <li>Plan and manage project from intial proposal through QA to deployment. Coordinating cross-department and cross-functionality communication while consitently meeting or exceeding deadlinese</li>
-                                    <li>Cross platform and 3rd party integration</li>
-                                </ul>
-                            </div>
-                        </li>
-                            <li class="job-entry">
-                                <div class="job-card">
-                                    <h3>Front-End/ Technical Support</h3>
-                                    <h4>Dealer Spike</h4>
-                                    <div class="exp-position-stats">
-                                        <span class="date-range"><i class="fa fa-calendar"></i>Nov 2017 - Jan 2020</span>
-                                        <span class="location"><a href="https://goo.gl/maps/3859GU8ZCK73coUv7"><i class="fas fa-map-marker"></i>Wilsonville, Oregon</a></span>
-                                    </div>
-                                    <h5>Accomplishments and responsibilities</h5>
-                                    <ul class="job-highlights">
-                                        <li>Research, develop, and implement, plug-and-play Shopify eCommerce integration using Vue/Vuex to leverage the Shopify storefront Graphql API solution for the entire platform. The result was Dealer SPike's first third party integration that leverages the Graphql API standard.</li>
-                                        <li> Develop training curriculum and inhouse-developer documentation for open-source analytics platform Matomo (formerly Piwik). Develop strategies for leveraging the Matomo JS API for creating custom conversion tracking to improve the accuracy and integrity of collected data</li>
-                                        <li>Regularly exceeds KPI targets. Recognized for being among the top 3 performers in the support department for the last 5 months running.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                    </ul>
-                </section>
-               
+        <!-- </div> -->
+      </div>
+    </nav>
+    <div class="container-fluid my-0 h-100">
+      <div id="Home" class="container position-relative bg-secondary h-75">
+        <div class="col-10 px-md-4 pt-3 pt-md-5 pb-2 mt-0 mx-auto d-flex flex-wrap justify-content-sm-around h-100">
+          <div class="col-lg-4 hero-img-wrapper mx-auto mt-lg-5 order-1 order-lg-2"></div>
+          <div class="col-lg-8 col-12  order-2 order-lg-1">
+            <div class="display-6 display-md-5 px-0 pt-lg-5 mt-lg-5 px-md-5 fw-bold text-center text-lg-left">Hi, I'm Will</div>
+        
+              <p class="lead mb-4 p-1 p-lg-3 text-left text-lg-center"> A front-end web developer with extensive knowledge and years of experience working in web technomlogies and UI/UX design delivering qulity work.</p>
+
+        
+          </div>
+          
+            <div class="w-100 gap-2 d-flex justify-content-end contact-info order-3">
+              <a target="_blank" href="https://www.portlandoregon.gov/" class="location mx-3 link-warning ">
+                <i class="fas fa-globe-americas"></i><span class="d-none d-lg-block">PDX, OR</span>
+              </a>
+              <a target="_blank" href="https://github.com/BillyDeeWilliams" class="github mx-3 link-warning ">
+                <i class="fab fa-github"></i><span class="d-none d-lg-block">Github Account</span>
+              </a>
+              <a target="_blank" href="mailto:madden.william.d@gmail.com" class="gmail mx-3 link-warning ">
+                <i class="fas fa-envelope"></i><span class="d-none d-lg-block">madden.william.d@gmail.com</span>
+              </a>
             </div>
-            <div class="column right-col col-one-thirds">
-                <section class="left-column-header column-header">
-                    <div class="img-wrapper">
-                        <a href="#"><img src="images\wdm-full-size-pwo.jpg" /></a>
-                    </div>
-                </section>
-                <section class="objective-summary">
-                    <!-- <h2  class="section-heading">Objective Summary</h2> -->
-                    <p> A highly driven web development professional with years of experience, always on the Lookout for new exciting challenges and opportunities to explore, learn, and grow. As a developer I seek to affect meaningful change in our world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
-                </section>
-                <section id="technologies" class="technologies-section">
-                    <h2 class="section-heading">technologies</h2>
-                    <ul class="technologies">
-                            <li class="tech-subgroup languages">
-                                <h3 class="position">languages & frameworks</h3>
-                                <ul>
-                                    <li><i class="fab fa-node-js"></i><div>Node.js</div></li>
-                                    <li><i  class="iconify" data-icon="file-icons:jest">></i>Jest</li>
-                                    <li><i class="iconify" data-icon="whh:ajax"></i>Axios</li>
-                                    <li><i class="iconify" data-icon="logos:apollostack"></i>Apollo</li>
-                                    <li><i class="devicon-graphql-plain colored"></i>GraphQL</li>
 
-                                    <li><i class="devicon-javascript-plain"></i>JS/ES6</li>
-                                    <li><i class="iconify" data-icon="vscode-icons:file-type-liquid"></i>Liquid</li>
-                                    <li><i class="devicon-react-original"></i>React</li>
-                                    <li><i class="devicon-vuejs-plain"></i>Vue</li> 
-
-                                    <li><i class="devicon-html5-plain"></i>HTML5</li>
-                                    <li><i class="devicon-css3-plain"></i>CSS3</li>
-                                    <li><i class="devicon-sass-original"></i>SCSS/LESS</li>
-                                                                   
-                                </ul>
-                            </li>
-                            <li class="tech-subgroup design">
-                                <h3 class="position">UI & Design Tools</h3>
-                                <ul>
-                                    <li><i class="devicon-sketch-line"></i>Sketch</li>
-                                    <li><i class="devicon-photoshop-plain"></i>Photoshop</li>
-                                    <li><i class="devicon-figma-plain"></i>Figma</li>
-                                </ul>
-                            </li>
-                            <li class="tech-subgroup project-managment">
-                                <h3 class="position">Project managment & CMS platforms</h3>
-                                <ul>
-                                    <li><i class="devicon-git-plain"></i>Git</li>
-                                    <li><i class="devicon-trello-plain"></i>Trello</li>
-                                    <li><i class="icon-heroku"></i>Heroku</li>
-                                    <li><i class="iconify" data-icon="logos:netlify"></i>Netlify</li>
-                                    <li><i class="iconify" data-icon="bx:bxl-shopify"></i>Shopify</li>
-                                    <li><i class="fab fa-hubspot"></i>Hubspot</li>
-                                </ul>
-                            </li>
-                    </ul>
-                </section>
+            
+            
+          </div>
+          <div id="home-wave" class="w-100 position-absolute">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container-fluid  my-0 h-100">
+          <div id="About" class="container h-100">
+            <div  class="row mx-auto py-3 my-3">
+              <div class="col-12 h2 text-uppercase text-center ">
+              <h2>About Me</h2>
             </div>
-            <section id="recent-project" class="recent-project-section">
-                <h2  class="section-heading">Demo Projects</h2>
-                <ul class="recent-project">
-                    <li class="project">
-                        <div class="job-card">
-                            <h3 class="project-title">Taggable Search Functionality Demo</h3>
-                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://vue3-taggable-search.netlify.app/">Taggable Search  </a></p>
-                            <p class="project-description">FULL URL: https://vue3-taggable-search.netlify.app/</p>
-                            <p class="project-description">
-                                Type: Vue3 SPA (live/ demo)</p>
-                                <p class="project-description">        A SPA build with the Vue 3 framework using the composition API demonstrating  taggable search using a public RESTful JSON API to provide source data, using local storage to provide state persistence between sessions.  Search for a user by first or last name. Add tags to user entries which can be used to filter search results for name by tag as well.</p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="job-card">
-                            <h3 class="project-title">Image Finder</h3>
-                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://unsplash-react-finder.netlify.com/">Image Search </a></p>
-                            <p class="project-description">FULL URL: https://unsplash-react-finder.netlify.com/</p>
-                            <p class="project-description">
-                                Type: React web app (live/ demo)</p>
-                                <p class="project-description">
-                                A simple React application for accessing the public 'unsplash' image API. Demonstrates Functional as well as Class-based component architecture. Simple and intuitive UI/UX leveraging CSS stylers like background-size and the newer Flex-box properties to accommodate varying image sizes and aspect-ratios for a uniform,  responsive view.</p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="job-card">
-                            <h3 class="project-title">Birthday Card / fun with CSS</h3>
-                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://happy-birthday-tami.netlify.app">CSS Birthday Card </a></p>
-                            <p class="project-description">FULL URL: https://happy-birthday-tami.netlify.app/</p>
-                            <p class="project-description">
-                                Type: CSS demo; An interactive animated birthday greeting</p>
-                                <p class="project-description">
-                                    An interactive birthday greeting I made for my stepmother using CSS to create some passive animations and beautiful cartoons as well as a fun and intuitive UX using only CSS transitions and animation properties.</p>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="job-card">
-                            <h3 class="project-title">GraphQL Server</h3>
-                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://limitless-cliffs-60173.herokuapp.com/">https://limitless-cliffs-60173.herokuapp.com/</a></p>
-                            <p class="project-description">FULL URL: https://limitless-cliffs-60173.herokuapp.com/</p>
-                            <p class="project-description">
-                                Type: GraphQL API (live/ demo)</p>
-                                <p class="project-description">
-                                A quick Express-Graphql API/server deployed to Heroku. Hit endpoint with a tool like <a target="_blank" href="https://www.electronjs.org/apps/graphiql">Graphiql</a> to query the API and see the documentation. Here is an example query you can use to get started. To request an array of all book[objects] in the mock DB, each including a key-value pair for the id, name, and author's name, try sending this query as a POST request: </p>
-                                <blockquote>
-                                <pre>
-                                    <code> 
-{
-    books {
-        id
-        name
-        author {
-            name
-        }
-    }
+            <div  class="row mx-auto p-3">
+              <div class="col-5 about-img"></div>
+              <div class="col-7 m-2 p-2">
+                <p>A highly driven web development professional with years of experience, always on the Lookout for new exciting challenges and opportunities to explore, learn, and grow. As a developer I seek to affect meaningful change in our world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  
+  
+<style>
+
+</style>
+
+<script src="./app.js"></script>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+
+<!-- 
+<script>
+const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+const THEME_TOGGLER = document.getElementById("theme-toggler");
+
+if (isDark) {
+  enableDarkTheme();
+} else {
+  disableDarkTheme();
 }
-                                    </code>
-                                  </pre>
-                                </blockquote>
-                        </div>
-                    </li>
-                   
-                    <li class="project">
-                        <div class="job-card">
-                            <h3 class="project-title">File Watcher</h3>
-                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://github.com/BillyDeeWilliams/netwatcher-client-server">nodeJS websockets file-wactcher repo</a></p>
-                            <p class="project-description">FULL URL: https://github.com/BillyDeeWilliams/netwatcher-client-server</p>
-                            <p class="project-description">
-                                Type: Github Repo (codebase)</p>
-                                <p class="project-description">
-                                Client and Server code base for Bash CLI NodeJs app that leverages web-socket connections to monitor remote file structure for file changes</p>
-                        </div>
-                    </li>
 
-                </ul>
-            </section>
-            <!-- <footer>
-                <h2>additional tool/tech experience</h2>
-                <ul>
-                    <li><i class="devicon-atom-original"></i></li>
-                    <li><i class="devicon-bash-plain"></i></li>
-                    <li><i class="devicon-bootstrap-plain"></i></li>
-                    <li><i class="devicon-cplusplus-plain"></i>
-                    </li>
-                    <li><i class="devicon-gimp-plain"></i>
-                    </li>
-                    <li><i class="devicon-github-original"></i>
-                    </li>
-                    <li><i class="devicon-handlebars-plain"></i>
-                    </li>
-                    <li><i class="devicon-krakenjs-plain"></i>
-                    </li>
-                    <li><i class="devicon-less-plain-wordmark"></i>
-                    </li>
-                    <li><i class="devicon-markdown-original"></i>
-                    </li>
-                    <li><i class="devicon-mongodb-plain"></i>
-                    </li>
-                    <li><i class="devicon-mysql-plain"></i>
-                    </li>
-                    <li><i class="devicon-msdos-line"></i>
-                    </li>
-                    <li><i class="devicon-npm-original-wordmark"></i>
-                    </li>
-                    <li><i class="devicon-nuxtjs-plain"></i>
-                    </li>
-                    <li><i class="devicon-python-plain"></i>
-                    </li>
-                    <li><i class="devicon-ruby-plain"></i>
-                    </li>
-                    <li><i class="devicon-redux-original"></i>
-                    </li>
-                    <li><i class="devicon-vscode-plain"></i>
-                    </li>
-                    <li><i class="devicon-webpack-plain"></i>
-                    </li>
-                    <li><i class="devicon-yarn-plain"></i>
-                    </li>
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+  const META = { isDark };
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
+}
 
-                </ul>
-            </footer> -->
-        </main>
-    </body>
+function enableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "<i class='fas fa-sun'></i>";
+
+}
+
+function disableDarkTheme() {
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "<i class='fas fa-moon'></i>";
+
+}
+</script> -->
+
+</body>
+
 </html>
-<!-- TODO:  -->
-<!-- *********************
-**  Add screenshots for projects
-**  add github for shopify project- fix links and uncomment
-**  update company name before submission
-** css QC and pdf/print view
-*************************-->
