@@ -41,3 +41,27 @@ html {
       left: 0px; }
       html body #home-wave svg > path {
         fill: var(--secondary); }
+    html body #About .about-img {
+      background-image: url("../../images/wdm.jpg");
+      width: 250px;
+      height: 250px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 0.5rem solid var(--secondary);
+      border-radius: 15px;
+      transition: all .3s ease-in-out; }
+      @media (min-width: 991px) {
+        html body #About .about-img {
+          width: 300px;
+          height: 300px; } }
+    html body #Experience .card {
+      background-color: var(--bs-secondary); }
+    html body #Experience ul.job-highlights {
+      list-style-position: inside;
+      list-style-image: initial;
+      list-style-type: circle; }
+      html body #Experience ul.job-highlights li {
+        margin: 5px;
+        line-height: 1.5rem;
+        max-width: 85%; }

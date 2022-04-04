@@ -36,7 +36,7 @@
    <title>William Madden - Front End Developer - excellence and elegance</title>
   </head>
   <body class="h-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-2 py-0">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark px-2 py-0">
       <!-- <div class="container"> -->
         <a class="navbar-brand mx-2 py-0 fs-6 text-center" href="#">
           WILLIAM<hr class="my-0 mx-auto w-75 p-0">
@@ -50,10 +50,13 @@
         <div class="collapse navbar-collapse" id="navbarHeader">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-75 text-center justify-content-md-end">
             <li class="nav-item mx-3">
+              <a class="nav-link active" href="#Home"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#Resume">Resume</a>
+              <a class="nav-link" href="#Experience">Experience</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="#Skills">Skills</a>
@@ -63,21 +66,18 @@
             </li>
             
           </ul>
-          <a
-        href="javascript:void()"
-        class="btn btn-lg ml-auto font-weight-bold"
-        id="theme-toggler"
-        onclick="toggleTheme()">
-         <i class="fas fa-sun"></i> </a>
+          <a class="btn btn-lg ml-auto font-weight-bold" id="theme-toggler" onclick="toggleTheme()">
+            <i class="fas fa-sun"></i>
+          </a>
 
         <!-- </div> -->
       </div>
     </nav>
-    <div class="container-fluid my-0 h-100">
-      <div id="Home" class="container position-relative bg-secondary h-75">
+    <div class="container-fluid my-0 h-hv100">
+      <section id="Home" class="mt-5 container position-relative bg-secondary h-75">
         <div class="col-10 px-md-4 pt-3 pt-md-5 pb-2 mt-0 mx-auto d-flex flex-wrap justify-content-sm-around h-100">
           <div class="col-lg-4 hero-img-wrapper mx-auto mt-lg-5 order-1 order-lg-2"></div>
-          <div class="col-lg-8 col-12  order-2 order-lg-1">
+          <div class="col-lg-8 col-12 pt-lg-5 mt-lg-3 order-2 order-lg-1">
             <div class="display-6 display-md-5 px-0 pt-lg-5 mt-lg-5 px-md-5 fw-bold text-center text-lg-left">Hi, I'm Will</div>
         
               <p class="lead mb-4 p-1 p-lg-3 text-left text-lg-center"> A front-end web developer with extensive knowledge and years of experience working in web technomlogies and UI/UX design delivering qulity work.</p>
@@ -92,7 +92,7 @@
               <a target="_blank" href="https://github.com/BillyDeeWilliams" class="github mx-3 link-warning ">
                 <i class="fab fa-github"></i><span class="d-none d-lg-block">Github</span>
               </a>
-              <a target="_blank" href="mailto:madden.william.d@gmail.com" class="gmail mx-3 link-warning ">
+              <a href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio"  class="gmail mx-3 link-warning ">
                 <i class="fas fa-envelope"></i><span class="d-none d-lg-block">Gmail</span>
               </a>
             </div>
@@ -105,27 +105,134 @@
               <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;"></path>
             </svg>
           </div>
-        </div>
-        <div class="container-fluid  my-0 h-100">
-          <div id="About" class="container h-100">
-            <div  class="row mx-auto py-3 my-3">
-              <div class="col-12 h2 text-uppercase text-center ">
+        </section>
+       
+        
+          <section id="About" class="container pt-5">
+            <div  class="row mx-auto ">
+              <div class="col-12 h2 mt-5 text-uppercase text-center ">
               <h2>About Me</h2>
             </div>
-            <div  class="row mx-auto p-3">
-              <div class="col-5 about-img"></div>
-              <div class="col-7 m-2 p-2">
-                <p>A highly driven web development professional with years of experience, always on the Lookout for new exciting challenges and opportunities to explore, learn, and grow. As a developer I seek to affect meaningful change in our world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
+            <div  class="row mx-auto px-md-3 justify-content-around">
+              <div class="col-md-5 col-12  about-img-wrapper">
+                <div class="about-img mx-auto mr-md-20 ml-md-auto"></div>
+              </div>
+              <div class="col-md-6 col-12 m-2 p-2 align-self-center">
+                <p>As a developer I seek to affect meaningful change in the world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
+                <p class="d-none d-md-block">I am passionate and driven web development professional. Years of experience specializing in eCommerce and front-end development has made me profficient with modern web frameworks and version control. </p>
+                <p class="text-center">Looking for a developer?
+                 
+                </p>
+                <div class="d-flex justify-content-center">
+                <a  
+                href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio" type="button" class="my-3 mx-auto btn btn-info w-auto align-self-center">Contact Me</a>
+              </div>
+                 
               </div>
             </div>
           </div>
-      </div>
+          </section>
+ 
 
-    </div>
+        <section id="Experience" class=" container position-relative bg-secondary mt-4">
+          <div class="col-5 mx-auto h2 pt-5 text-uppercase text-center ">
+            <h2>Experience</h2>
+            <hr>
+          </div>
+        
+          <div class=" card">
+            <div class="card-body">
+              <h4 class="card-title">Front-End Developer</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Full Service Funnels
+                <span class="h6"> - (contract)</span></h5>
+              <div class="col-lg-5 col-10 d-flex flex-wrap justify-content-around">
+              <span><i class="fa fa-calendar mr-1"></i>Oct 2021 - Jan 2022</span>
+              <a class="link-warning" href="https://goo.gl/maps/nbi82hUmDCaAJNFD6"><i class="mr-1 fas fa-map-marker"></i>Portland, Oregon</a>
+            </div>
+              <ul class="job-highlights">
+                <li>Ceate and manage 1k+ web pages with a prprietary page-build platofrm built on grapes JS</li>
+                <li>Update and optimize exisintg content, as well as develop new site templates and features</li>
+                <li>Troubleshoot and solve integration issues</li>
+                <li>Data analysis and system optimization </li>
+              </ul>
+            </div>
+          </div>  
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Lead Front-End Developer</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Schoolhouse Electric CO.</h5>
+              <div class="col-lg-5 col-10 d-flex justify-content-around">
+              <span><i class="fa fa-calendar mr-1"></i>Jan 2020 - Feb 2021</span>
+              <a class="link-warning" href="https://goo.gl/maps/FCGFPkUmFYsZ7Y1h8"><i class="fas fa-map-marker mr-1"></i>Portland, Oregon</a>
+            </div>
+              <ul class="job-highlights">
+                <li>Maintain and manage Shopify eCommerce website for major producer and distributor of high-end  heirloom home lighting and appliances</li>
+                <li>Update and optimize exisintg content, as well as develop new site fatures</li>
+                <li>Plan and manage project from intial proposal through QA to deployment. Coordinating cross-department and cross-functionality communication while consitently meeting or exceeding deadlinese</li>
+                <li>Cross platform and 3rd party integration</li>
+              </ul>
+            </div>
+          </div>          
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Technical Support/ Front-End</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Dealer Spike</h5>
+              <div class="col-lg-5 col-10 d-flex justify-content-around">
+              <span><i class="fa fa-calendar mr-1"></i>Nov 2017 - Jan 2020</span>
+              <a class="link-warning" href="https://goo.gl/maps/3859GU8ZCK73coUv7"><i class="fas fa-map-marker mr-1"></i>Wilsonville, Oregon</a>
+            </div>
+              <ul class="job-highlights">
+                <li>Research, develop, and implement, plug-and-play Shopify eCommerce integration using Vue/Vuex to leverage the Shopify storefront Graphql API solution for the entire platform. The result was Dealer SPike's first third party integration that leverages the Graphql API standard.</li>
+                <li> Develop training curriculum and inhouse-developer documentation for open-source analytics platform Matomo (formerly Piwik). Develop strategies for leveraging the Matomo JS API for creating custom conversion tracking to improve the accuracy and integrity of collected data</li>
+                <li>Regularly exceeds KPI targets. Recognized for being among the top 3 performers in the support department for the last 5 months running.</li>
+              </ul>
+            </div>
+          </div>  
+          <div class="row py-3">
+            <a href="./assets/resume.pdf" target="_blank" role="button" class="btn btn-lg btn-info mx-auto w-auto">Download Resume</a>
+          </div> 
+        </section>
+     
+        <section id="Skills" class=" container position-relative h-50 ">
+          
+                     
+        </section>
+
+
+        <section id="Demos" class=" container position-relative bg-secondary h-75">
+        </section>
+      </div>
+        <footer class="bg-dark text-center text-white pt-2">
+          <div class="d-flex justify-content-between p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="d-flex flex-column justify-content-end m-0">
+            © 2022 William D Madden
+          </p>
+            <section class="mb-2 mr-lg-4">
+           
+              <!-- Gmail -->
+              <a class="btn rounded-circle btn-outline-light btn-floating m-1" href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio" role="button"
+                ><i class="far fa-envelope-open"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a class="btn rounded-circle btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/william-madden-866098b2/" role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+        
+              <!-- Github -->
+              <a class="btn rounded-circle btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/BillyDeeWilliams" role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+          </div>
+        </footer>
+ 
+
+  
+
   
   
 <style>
-
 </style>
 
 <script src="./app.js"></script>
@@ -136,40 +243,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
 
-<!-- 
-<script>
-const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
-const THEME_TOGGLER = document.getElementById("theme-toggler");
-
-if (isDark) {
-  enableDarkTheme();
-} else {
-  disableDarkTheme();
-}
-
-function toggleTheme() {
-  isDark = !isDark;
-  if (isDark) {
-    enableDarkTheme();
-  } else {
-    disableDarkTheme();
-  }
-  const META = { isDark };
-  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(META));
-}
-
-function enableDarkTheme() {
-  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-  THEME_TOGGLER.innerHTML = "<i class='fas fa-sun'></i>";
-
-}
-
-function disableDarkTheme() {
-  DARK_STYLE_LINK.setAttribute("href", "");
-  THEME_TOGGLER.innerHTML = "<i class='fas fa-moon'></i>";
-
-}
-</script> -->
 
 </body>
 

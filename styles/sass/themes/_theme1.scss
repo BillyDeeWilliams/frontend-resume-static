@@ -26,8 +26,8 @@ html{
         }
       }
     }
-    //nav-end
-    //hero-start
+    //Nav end
+    //Hero start
     .hero-img-wrapper{
       padding: 5px;
       background-image: url('../../images/wdm-full-size-pwo.jpg');
@@ -60,8 +60,45 @@ html{
         fill:var(--secondary);
       }
     }
-    //hero-end
+    //Hero end
+    // About start
+    #About{
+      .about-img{
+        background-image: url('../../images/wdm.jpg');
+        width: 250px;
+        height: 250px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: .5rem solid var(--secondary);
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
+        @media(min-width: 991px){
+          width: 300px;
+          height: 300px;
+        } 
+      }
+    }
+    //About end
+    //Experience begin
+  #Experience{
+    .card{ 
+      background-color: var(--bs-secondary);
+     // color: var(--secondary)
+    }
 
+    ul.job-highlights{
+      list-style-position: inside;
+      list-style-image: initial;
+      list-style-type: circle;
+
+      li{
+        margin: 5px;
+        line-height: 1.5rem;
+        max-width: 85%;
+      }
+    }
+  }
     //body
   }
 }
