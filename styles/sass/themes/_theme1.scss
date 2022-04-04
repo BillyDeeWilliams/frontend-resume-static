@@ -8,6 +8,9 @@ html{
     nav{
       a.navbar-brand{
         line-height: 1;
+        small.font-weight-bold{
+          color:#aeaeae !important ;
+        }
       }
       i.fas{
         color: white;

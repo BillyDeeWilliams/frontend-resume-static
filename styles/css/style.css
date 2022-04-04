@@ -4,6 +4,8 @@ html {
     height: 100%; }
     html body nav a.navbar-brand {
       line-height: 1; }
+      html body nav a.navbar-brand small.font-weight-bold {
+        color: #aeaeae !important; }
     html body nav i.fas {
       color: white; }
       html body nav i.fas.fa-moon {
