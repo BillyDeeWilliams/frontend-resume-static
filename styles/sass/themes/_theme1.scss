@@ -85,6 +85,11 @@ html{
     .card{ 
       background-color: var(--bs-secondary);
      // color: var(--secondary)
+
+      .card-subtitle{
+        color: #505050 !important;
+        font-weight: 800;
+      }
     }
 
     ul.job-highlights{

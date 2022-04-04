@@ -57,6 +57,9 @@ html {
           height: 300px; } }
     html body #Experience .card {
       background-color: var(--bs-secondary); }
+      html body #Experience .card .card-subtitle {
+        color: #505050 !important;
+        font-weight: 800; }
     html body #Experience ul.job-highlights {
       list-style-position: inside;
       list-style-image: initial;
