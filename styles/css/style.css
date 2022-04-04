@@ -74,3 +74,25 @@ html {
         margin: 5px;
         line-height: 1.5rem;
         max-width: 85%; }
+    html body #Skills .tech-subgroup ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      html body #Skills .tech-subgroup ul li {
+        width: 72px;
+        height: 72px;
+        padding: 3px 5px;
+        margin: 5px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px; }
+        html body #Skills .tech-subgroup ul li:hover {
+          background-color: rgba(66, 66, 66, 0.514); }
+        html body #Skills .tech-subgroup ul li i {
+          text-align: center;
+          font-size: 1.5rem; }

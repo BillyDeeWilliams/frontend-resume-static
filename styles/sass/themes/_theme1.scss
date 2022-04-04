@@ -108,7 +108,41 @@ html{
       }
     }
   }
-    //body
+  //Exp End
+
+  //Skills Start
+  #Skills{
+    .tech-subgroup {
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+          width: 72px;
+          height: 72px;
+          padding: 3px 5px;
+          margin: 5px;
+          align-items: center;
+          justify-content: space-around;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          
+          &:hover{
+            background-color: rgba(66, 66, 66, 0.514);
+          }
+          i{
+            text-align: center;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+    //body End
   }
 }
 
