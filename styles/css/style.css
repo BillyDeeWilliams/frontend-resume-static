@@ -62,12 +62,24 @@ html {
       background-color: #989898b0;
       border-radius: 5px;
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      border: none;
+      margin-bottom: 90px !important; }
       html body #Experience .card .card-subtitle {
         color: #505050 !important;
         font-weight: 800; }
       html body #Experience .card .date-range {
         color: #ffcd39 !important; }
+      html body #Experience .card .location {
+        position: absolute;
+        top: -145%;
+        right: -15%; }
+        @media (min-width: 991px) {
+          html body #Experience .card .location {
+            top: -200%;
+            right: -125%; } }
+      html body #Experience .card .curve {
+        bottom: -80px; }
     html body #Experience ul.job-highlights {
       list-style-position: inside;
       list-style-image: initial;

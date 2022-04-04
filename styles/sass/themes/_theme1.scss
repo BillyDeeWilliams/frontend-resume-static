@@ -90,12 +90,26 @@ html{
      border-radius: 5px;
      width: 80%;
      margin: 0 auto;
+     border: none;
+     margin-bottom: 90px !important;
       .card-subtitle{
         color: #505050 !important;
         font-weight: 800;
       }
       .date-range{
         color: #ffcd39 !important;
+      }
+      .location{
+        position: absolute;
+        top: -145%;
+    right: -15%;
+        @media(min-width: 991px){
+          top: -200%;
+          right: -125%;
+        }
+      }
+      .curve{
+        bottom: -80px;
       }
     }
 
