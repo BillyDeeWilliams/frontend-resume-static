@@ -98,3 +98,11 @@ html {
         html body #Skills .tech-subgroup ul li i {
           text-align: center;
           font-size: 1.5rem; }
+    html body #Demos #demo-wave {
+      height: 250px;
+      overflow: hidden;
+      z-index: -10;
+      left: 0px;
+      top: -250px; }
+      html body #Demos #demo-wave svg > path {
+        fill: var(--secondary); }

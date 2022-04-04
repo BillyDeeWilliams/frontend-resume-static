@@ -145,6 +145,21 @@ html{
       }
     }
   }
+  //Skills End
+
+  //Sample Projects (to be portfolio) start
+  #Demos{
+    #demo-wave{
+      height: 250px;
+      overflow: hidden;
+      z-index: -10;
+      left: 0px;
+      top: -250px;
+      svg > path{
+        fill:var(--secondary);
+      }
+    }
+  }
     //body End
   }
 }
