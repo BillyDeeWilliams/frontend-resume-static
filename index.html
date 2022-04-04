@@ -30,7 +30,7 @@
    const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
    // dank theme bootstrap style cdn
    const DARK_THEME_PATH = "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/darkly/bootstrap.min.css";
-   let isDark = !LOCAL_META_DATA && LOCAL_META_DATA.isDark;
+   let isDark =  (LOCAL_META_DATA ? LOCAL_META_DATA.isDark : {'isDark': false} );
    </script>
     
    <title>William Madden - Front End Developer - excellence and elegance</title>
