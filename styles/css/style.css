@@ -70,14 +70,15 @@ html {
         font-weight: 800; }
       html body #Experience .card .date-range {
         color: #ffcd39 !important; }
-      html body #Experience .card .location {
-        position: absolute;
-        top: -145%;
-        right: -15%; }
-        @media (min-width: 991px) {
-          html body #Experience .card .location {
-            top: -200%;
-            right: -125%; } }
+      @media (min-width: 768px) {
+        html body #Experience .card .location {
+          position: absolute;
+          top: -145%;
+          right: -15%; } }
+      @media (min-width: 991px) {
+        html body #Experience .card .location {
+          top: -200%;
+          right: -125%; } }
       html body #Experience .card .curve {
         bottom: -80px; }
     html body #Experience ul.job-highlights {

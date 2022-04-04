@@ -100,9 +100,12 @@ html{
         color: #ffcd39 !important;
       }
       .location{
-        position: absolute;
-        top: -145%;
-    right: -15%;
+       
+        @media(min-width: 768px){
+          position: absolute;
+          top: -145%;
+          right: -15%;
+        }
         @media(min-width: 991px){
           top: -200%;
           right: -125%;
