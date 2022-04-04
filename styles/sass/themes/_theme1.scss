@@ -58,7 +58,7 @@ html{
       height: 150px;
       overflow: hidden;
       left: 0px;
-  
+      bottom: -150px;
       svg > path{
         fill:var(--secondary);
       }
@@ -86,9 +86,10 @@ html{
     //Experience begin
   #Experience{
     .card{ 
-      background-color: var(--bs-secondary);
-     // color: var(--secondary)
-
+     background-color: #989898b0;
+     border-radius: 5px;
+     width: 80%;
+     margin: 0 auto;
       .card-subtitle{
         color: #505050 !important;
         font-weight: 800;
