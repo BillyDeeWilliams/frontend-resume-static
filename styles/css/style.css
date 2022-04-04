@@ -66,6 +66,8 @@ html {
       html body #Experience .card .card-subtitle {
         color: #505050 !important;
         font-weight: 800; }
+      html body #Experience .card .date-range {
+        color: #ffcd39 !important; }
     html body #Experience ul.job-highlights {
       list-style-position: inside;
       list-style-image: initial;
