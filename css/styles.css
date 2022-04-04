@@ -511,22 +511,31 @@ ul{
     justify-content: center;
 }
 ul.contact-info{
-
-width: 100%;
-margin-top: 20px;
-border: 1px solid darkgray;
-padding: 10px;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid darkgray;
+	padding: 10px;
 }
 
 ul.contact-info> li{
-    width: 50%;
-    margin: 10px -10px;
-    font-size: 14px;
+	margin: 10px;
+	font-size: 14px;
+	width: auto;
 }
+@media (max-width: 768px) {
+	ul.contact-info{
+		margin-top: 0px; 
+  	 border: none;
+    justify-content: start;
+	}
+	ul.contact-info> li{
+    width: 90%;
+	}
+}
+
 body{
     background-color: lightgrey;
     font-size: 18px;
-
 }
 h1,h2, #technologies h3,  #technologies li{
 
@@ -591,7 +600,7 @@ div.left-col{
 
 }
 div.right-col{
-    width: 30%;
+    width: 33%;
 }
 
 div.column section {
