@@ -43,7 +43,7 @@ html {
       left: 0px;
       bottom: -150px; }
       html body #home-wave svg > path {
-        fill: var(--secondary); }
+        fill: var(--bs-purple); }
     html body #About .about-img {
       background-image: url("../../images/wdm.jpg");
       width: 250px;
@@ -51,7 +51,7 @@ html {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      border: 0.5rem solid var(--secondary);
+      border: 0.5rem solid var(--bs-purple);
       border-radius: 15px;
       transition: all .3s ease-in-out; }
       @media (min-width: 991px) {
@@ -112,10 +112,25 @@ html {
           text-align: center;
           font-size: 1.5rem; }
     html body #Demos #demo-wave {
-      height: 250px;
+      height: 200px;
       overflow: hidden;
       z-index: -10;
       left: 0px;
-      top: -250px; }
+      top: -200px; }
       html body #Demos #demo-wave svg > path {
-        fill: var(--secondary); }
+        fill: var(--bs-purple); }
+    html body #Demos .card {
+      z-index: 1; }
+      html body #Demos .card > a:hover {
+        text-decoration: none; }
+      html body #Demos .card .card-img {
+        position: absolute;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: all .4s ease-in-out; }
+      html body #Demos .card:hover .card-img {
+        opacity: 0;
+        z-index: -5; }
