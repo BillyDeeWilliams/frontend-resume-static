@@ -4,6 +4,7 @@
   "description": "single page bootstrapped refactor of original site",
   "main": "index.html",
   "scripts": {
+    "start": "serve",
     "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
   },
   "repository": {
