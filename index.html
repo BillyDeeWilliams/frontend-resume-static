@@ -1,415 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href='favico.ico' type='image/x-icon'/ >
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--local favicon  -->
+        <link rel='icon' href='favico.ico' type='image/x-icon'/ >
 
-  <!--Normailez CSS from CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/flatly/bootstrap.min.css" integrity="sha512-NnOXwTfcNBeRenMzrDACGwxbThjRcI5H8jvM+VDKKkXA6wkAb2c0t1YgDXWmW2TNX1CUSe6Ma6HXYG2J1rBGDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link id="dark-theme-style" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="./styles/css/style.css" />
+        <!--normailez css from cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+        <!--bootstrap css.min from cdn  -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- local stylesheet -->    <link rel="stylesheet" href="css\styles.css">
+        <!-- FA 5 cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+      
+        <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
 
-  <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
-  <script type="text/javascript">
-   const LOCAL_STORAGE_KEY = "toggle-bootstrap-theme";
-   const LOCAL_META_DATA = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-   // dank theme bootstrap style cdn
-   const DARK_THEME_PATH = "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.1/darkly/bootstrap.min.css";
-   let isDark =  (LOCAL_META_DATA ? LOCAL_META_DATA.isDark : {'isDark': false} );
-   </script>
-    
-   <title>William Madden - Front End Web Developer</title>
-  </head>
-  <body class="h-100">
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark px-2 py-0">
-      <!-- <div class="container"> -->
-        <a class="navbar-brand mx-2 py-0 fs-6 text-center" href="#">
-          WILLIAM<hr class="my-0 mx-auto w-75 p-0">
-          MADDEN<br>
-          <span><small class="font-weight-bold">FRONTEND DEVELOPER</small></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarHeader">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-75 text-center justify-content-md-end">
-            <li class="nav-item mx-3">
-              <a class="nav-link active" href="#"><i class="fas fa-home"></i></a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#Experience">Experience</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#Skills">Skills</a>
-            </li>
-            <!-- <li class="nav-item mx-3">
-              <a class="nav-link" href="#Demos">Demos</a>
-            </li> -->
-            
-          </ul>
-          <a class="btn btn-lg ml-auto font-weight-bold" id="theme-toggler" onclick="toggleTheme()">
-            <i class="fas fa-sun"></i>
-          </a>
+<script>
+  console.log('redirecting to new site...')
+  window.location.replace('https://webdev-wdm.netlify.app/');
+</script>
 
-        <!-- </div> -->
-      </div>
-    </nav>
-    <div class="container-fluid my-0 h-hv100 mt-5">
-      <section id="Home" class="mt-5 py-5 container position-relative bg-secondary h-75">
-        <div class="col-10 px-md-4 pt-3 pt-md-5 pb-2 mt-0 mx-auto d-flex flex-wrap justify-content-sm-around h-100">
-          <div class="col-lg-4 hero-img-wrapper mx-auto mt-lg-5 order-1 order-lg-2"></div>
-          <div class="col-lg-8 col-12 pt-lg-5 mt-lg-3 order-2 order-lg-1">
-            <div class="display-6 display-md-5 px-0 pt-lg-5 mt-lg-5 px-md-5 fw-bold text-center text-lg-left">Hi, I'm William</div>
-        
-              <p class="lead mb-4 p-1 p-lg-3 text-left text-lg-center"> A front-end web developer with extensive knowledge and years of experience working in web technologies and UI/UX design delivering quality work.</p>
+        <title>William Madden - Front End Developer - excellence and elegance</title>
+    </head>
+    <body>
 
-        
-          </div>
-          
-            <div class="w-100 gap-2 d-flex justify-content-end contact-info order-3">
-              <a target="_blank" href="https://www.portlandoregon.gov/" class="location mx-3 link-warning ">
-                <i class="fas fa-globe-americas"></i><span class="d-none d-lg-block">PDX, OR</span>
-              </a>
-              <a target="_blank" href="https://github.com/BillyDeeWilliams" class="github mx-3 link-warning ">
-                <i class="fab fa-github"></i><span class="d-none d-lg-block">Github</span>
-              </a>
-              <a href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio"  class="gmail mx-3 link-warning ">
-                <i class="fas fa-envelope"></i><span class="d-none d-lg-block">Gmail</span>
-              </a>
-            </div>
-
-            
-            
-          </div>
-          <div id="home-wave" class="w-100 position-absolute">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;"></path>
-            </svg>
-          </div>
-        </section>
-       
-        <section id="About" class="container pt-5">
-          <div  class="row mx-auto ">
-            <div class="col-12 h2 mt-5 text-uppercase text-center ">
-              <h2>About Me</h2>
-            </div>
-            <div  class="row mx-auto px-md-3 justify-content-around">
-              <div class="col-md-5 col-12  about-img-wrapper">
-                <div class="about-img mx-auto mr-md-20 ml-md-auto"></div>
-              </div>
-              <div class="col-md-6 col-12 m-2 p-2 align-self-center">
-                <p>I am passionate and driven web development professional from the Pacific Northwest. My years of experience specializing in eCommerce and front-end development have made me profficient with modern web frameworks and version control.</p>
-                <p class="d-none d-md-block">As a developer I seek to affect meaningful change in the world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem.</p>
-                <p class="text-center">Looking for a developer?</p>
-                <div class="d-flex justify-content-center">
-                <a href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio" type="button" class="my-3 mx-auto btn btn-info w-auto align-self-center">Contact Me</a>
-              </div>
-                 
-              </div>
-            </div>
-          </div>
-        </section>
- 
-
-        <section id="Experience" class=" container position-relative bg-secondary mt-4">
-          <div class="text-center p-3" >
-            <h2 class="h2 mx-auto w-auto d-inline-block text-uppercase">Work Experience</h2>
-            <hr class="mx-auto w-25 my-0">
-          </div>
-          <div class="card ">
-            <div class="card-body">
-              <h4 class="card-title">Premium Web Support/ Front-End</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Dealer Spike: lead Venture</h5>
-              <div class="col-lg-5 col-10 d-flex flex-wrap  justify-content-around">
-              <span class="date-range"><i class="fa fa-calendar mr-1"></i>April 2022 - present</span>
-              <a class="link-warning location" href="https://goo.gl/maps/3859GU8ZCK73coUv7"><i class="fas fa-map-marker mr-1"></i>Wilsonville, Oregon</a>
-            </div>
-              <ul class="job-highlights">
-                <li>provide top-quality web suport for highly specialized and custom websites</li>
-                <li>Create and maintine inovative solutions providing an intuitve, user-friendly, interactive web experience for customers</li>
-                <li>identify and inderstand challanges facing customer base and develop custom solutions to meet the evolving business needs of a diverse clientele</li>
-                <li>Consistently and continually exceed target KPIs</li>
-                <li>Spearhead transiton to a new CMS platofrm for cusomters and internal support team</li>
-                <li>utilize CRMs like Microsolf Dynamics and Salesforce to work with crossfunctional partners to successfully deliver excellent customer experience</li>
-              </ul>
-
-            </div>
-            <div class="position-absolute w-100 curve" >
-                <svg
-                    width="100%"
-                    height="80"
-                    viewBox="0 0 500 80"
-                    preserveAspectRatio="none"
-                    >
-                    <path d="M0,0 L0,40 Q125,0 250,40,385,80,500,40 L500,0 Z" fill="#989898b0"/>
-                </svg>
-            </div>
-        </div>  
-          <div class="mt-3 card">
-            <div class="card-body pb-0">
-              <h4 class="card-title">Front-End Developer</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Full Service Funnels
-                <span class="h6"> - (contract)</span></h5>
-              <div class="col-lg-5 col-10 d-flex flex-wrap  justify-content-around">
-              <span class="date-range"><i class="fa fa-calendar mr-1"></i>Oct 2021 - Jan 2022</span>
-              <a class="link-warning location" href="https://goo.gl/maps/nbi82hUmDCaAJNFD6"><i class="mr-1 fas fa-map-marker"></i>Portland, Oregon</a>
-            </div>
-              <ul class="job-highlights">
-                <li>Ceate and manage 1k+ web pages on proprietary platform using built on grapes.js</li>
-                <li>Update and optimize existing content, as well as develop new site templates and features</li>
-                <li>Troubleshoot and solve integration issues</li>
-                <li>Data analysis and system optimization</li>
-                <li>DNS and email config</li>
-              </ul>
-            </div>
-                <div class="position-absolute w-100 curve" >
-                    <svg
-                        width="100%"
-                        height="80"
-                        viewBox="0 0 500 80"
-                        preserveAspectRatio="none"
-                        >
-                        <path d="M0,0 L0,40 Q125,0 250,40,385,80,500,40 L500,0 Z" fill="#989898b0"/>
-                   </svg>
-              </div>
-          </div>  
-
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Lead Front-End Developer</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Schoolhouse Electric CO.</h5>
-              <div class="col-lg-5 col-10 d-flex flex-wrap  justify-content-around">
-              <span class="date-range"><i class="fa fa-calendar mr-1"></i>Jan 2020 - Feb 2021</span>
-              <a class="link-warning location" href="https://goo.gl/maps/FCGFPkUmFYsZ7Y1h8"><i class="fas fa-map-marker mr-1"></i>Portland, Oregon</a>
-            </div>
-              <ul class="job-highlights">
-                <li>Maintain and manage Shopify eCommerce website for major producer and distributor of high-end  heirloom home lighting and appliances</li>
-                <li>Update and optimize existing content, as well as develop new site features</li>
-                <li>Plan and manage project from intial proposal through QA to deployment. Coordinating cross-department and cross-functionality communication while consitently meeting or exceeding deadlines</li>
-                <li>Cross platform and 3rd party integration</li>
-              </ul>
-            </div>
-            <div class="position-absolute w-100 curve" >
-                <svg
-                    width="100%"
-                    height="80"
-                    viewBox="0 0 500 80"
-                    preserveAspectRatio="none"
-                    >
-                    <path d="M0,0 L0,40 Q125,0 250,40,385,80,500,40 L500,0 Z" fill="#989898b0"/>
-                </svg>
-            </div>
-        </div>    
-
-          <div class="card ">
-            <div class="card-body">
-              <h4 class="card-title">Technical Support/ Front-End</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Dealer Spike</h5>
-              <div class="col-lg-5 col-10 d-flex flex-wrap  justify-content-around">
-              <span class="date-range"><i class="fa fa-calendar mr-1"></i>Nov 2017 - Jan 2020</span>
-              <a class="link-warning location" href="https://goo.gl/maps/3859GU8ZCK73coUv7"><i class="fas fa-map-marker mr-1"></i>Wilsonville, Oregon</a>
-            </div>
-              <ul class="job-highlights">
-                <li>Research, develop, and implement, plug-and-play Shopify eCommerce integration using Vue/Vuex to leverage the Shopify storefront Graphql API solution for the entire platform</li>
-                <li>Develop training curriculum and inhouse-developer documentation for open-source analytics platform</li>
-                <li>Develop strategies creating custom conversion tracking to improve the accuracy and integrity of collected data</li>
-                <li>Consistently recognized for exceeding target KPIs</li>
-              </ul>
-            </div>
-            <div class="position-absolute w-100 curve" >
-                <svg
-                    width="100%"
-                    height="80"
-                    viewBox="0 0 500 80"
-                    preserveAspectRatio="none"
-                    >
-                    <path d="M0,0 L0,40 Q125,0 250,40,385,80,500,40 L500,0 Z" fill="#989898b0"/>
-                </svg>
-            </div>
-        </div>  
-
-          <div class="row py-3">
-            <a href="./assets/wdm-resume-v1.2.pdf" target="_blank" role="button" class="btn btn-lg btn-info mx-auto w-auto" download>Download Resume <i class="fas fa-download"></i></a>
-          </div> 
-        </section>
-     
-        <section id="Skills" class=" container position-relative my5 py-5">
-          
-          <div class="technologies row">
-            <div class="tech-subgroup col-12 languages p-4 my-3">
-                <h4 class="text-center my-4">Web Technologies</h4>
-                <ul>
-                    <li><i class="iconify" data-icon="logos:nodejs-icon" data-width="1.5rem" data-align="center"></i>Node.js</li>
-                    <li><i  class="iconify" data-icon="logos:jest" data-width="1.5rem" data-align="center"></i>Jest</li>
-                    <li><i class="iconify" data-icon="logos:axios" data-width="60px" data-align="center"></i>Axios</li>
-                    <li><i class="iconify" data-icon="logos:apollostack" data-width="1.5rem" data-align="center"></i>Apollo</li>
-                    <li><i class="iconify" data-icon="logos:graphql" data-width="1.5rem" data-align="center"></i>GraphQL</li>
-                    <li><i class="iconify" data-icon="logos:es6" data-width="1.5rem" data-align="center"></i>JS/ES6</li>
-                    <li><i class="iconify" data-icon="vscode-icons:file-type-liquid" data-align="center" data-width="1.5rem"></i>Liquid</li>
-                    <li><i class="iconify" data-icon="logos:react" data-width="1.5rem" data-align="center"></i>React</li>
-                    <li><i class="iconify" data-icon="logos:vue" data-width="1.5rem" data-align="center"></i>Vue</li> 
-                    <li><i class="iconify" data-icon="logos:html-5" data-width="1.5rem" data-align="center"></i>HTML5</li>
-                    <li><i class="iconify" data-icon="logos:css-3" data-width="1.5rem" data-align="center"></i>CSS3</li>
-                    <li><i class="iconify" data-icon="logos:sass" data-height="2rem" data-align="center"></i>SCSS/LESS</li>                      
-                </ul>
-            </div>
-            <div class="tech-subgroup col-12 col-lg-6 design p-4 my-3">
-                <h4 class="text-center my-4">Design & Project Management</h4>
-                <ul>
-                    <li><i class="iconify" data-icon="logos:sketch" data-width="1.5rem" data-align="center"></i>Sketch</li>
-                    <li><i class="iconify" data-icon="vscode-icons:file-type-photoshop" data-width="2rem" data-align="center"></i>Photoshop</li>
-                    <li><i class="iconify" data-icon="logos:figma" data-width="1.5rem" data-align="center"></i>Figma</li>
-                    <li><i class="iconify" data-icon="logos:trello" data-width="1.5rem" data-align="center"></i>Trello</li>
-                </ul>
-            </div>
-            <div class="tech-subgroup col-12 col-lg-6 webservices p-4 my-3">
-                <h4 class="text-center my-4"> Web Services & Platforms </h4>
-                <ul>
-                    <li><i class="iconify" data-icon="fa:github" data-width="1.5rem" data-align="center"></i>Github</li>
-                    <li><i class="iconify" data-icon="bxl:heroku" data-width="1.5rem" data-align="center"></i>Heroku</li>
-                    <li><i class="iconify" data-icon="logos:netlify" data-width="1.5rem" data-align="center"></i>Netlify</li>
-                    <li><i class="iconify" data-icon="logos:firebase" data-width="1.5rem" data-align="center"></i>FireBase</li>
-                    <li><i class="iconify" data-icon="logos:shopify" data-width="1.5rem" data-align="center"></i>Shopify</li>
-                    <li><i class="iconify" data-icon="cib:hubspot" style="color: #f87a27;" data-width="1.5rem" data-align="center"></i>Hubspot</li>
-                </ul>
-            </div>
-    </div>
-        </section>
-
-
-        <section id="Demos" class=" container position-relative bg-secondary h-75">
-          <div id="demo-wave" class="w-100 position-absolute">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#0099ff" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,213.3C384,235,480,245,576,240C672,235,768,213,864,186.7C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-          </div>
-          <div class="text-center p-3" >
-            <h2 class="h2 mx-auto w-auto d-inline-block text-uppercase">Dev Samples</h2>
-            <hr class="mx-auto w-25 my-0">
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 g-2 text-center">
-            <div class="col p-3">
-              <h5 class="card-title">Login/SignUp</h5>
-              <div class="card h-100">
-                <a href="" target="_blank">
-                  <img src="./images/sign-in-master.JPG" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Login/SignUp with React & Firebase</h5>
-                    <p class="card-text">A single page react app using firebase/firestore for authentication and cloud-storage. login or signup, update your account, restore forgotten password, upload/update profile pic.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col p-3">
-              <h5 class="card-title">Taggable Search</h5>
-              <div class="card h-100">
-                <a href="" target="_blank">
-                  <img src="./images/taggable-search-master.JPG" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Taggable Seacrh with Vue3</h5>
-                    <p class="card-text">Query a REST api and filter JSON results by first or last name as well as by addable custom tags. Results display with calcualted data.</p>
-                  </div>
-              </a>
-              </div>
-            </div>
-            <div class="col p-3">
-              <h5 class="card-title">Image Search</h5>
-              <div class="card h-100">
-                <a href="https://unsplash-react-finder.netlify.com" target="_blank">
-                  <img src="./images/image-search-master.JPG" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Image Search with React</h5>
-                    <p class="card-text">Image search using inuput to query plublic Unsplash API by image name/keyword then display top 10 reuslts.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col p-3">
-              <h5 class="card-title">Card title</h5>
-              <div class="card h-100">
-                  <img src="./images/graphiql-master.JPG" class="card-img" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Graphql API with node & express</h5>
-                    <p class="card-text">
-                      A Graphql API deployed to Heroku. Hit the <code>https://limitless-cliffs-60173.herokuapp.com/</code>  endpoint with a tool like <a target="_blank" href="https://www.electronjs.org/apps/graphiql">Graphiql</a>. Here is an example query to get started:</p>
-                      <blockquote>
-                      <pre>
-                          <code> 
-{
-  books {
-    id
-    name
-    author {
-      name 
-    }
-  }
-}
-                          </code>
-                        </pre>
-                      </blockquote>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-        <footer class="bg-dark text-center text-white pt-2">
-          <div class="d-flex justify-content-between p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p class="d-flex flex-column justify-content-end m-0">
-            © 2022 William D Madden
-          </p>
-            <section class="mb-2 mr-lg-4">
-           
-              <!-- Gmail -->
-              <a class="btn rounded-circle btn-outline-light btn-floating m-1" href="mailto:madden.william.d@gmail.com?subject=Mail from Dev Portfolio" role="button"
-                ><i class="far fa-envelope-open"></i
-              ></a>
-        
-              <!-- Linkedin -->
-              <a class="btn rounded-circle btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/william-madden-866098b2/" role="button"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-        
-              <!-- Github -->
-              <a class="btn rounded-circle btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/BillyDeeWilliams" role="button"
-                ><i class="fab fa-github"></i
-              ></a>
+        <main>
+            <div class="column left-col col-two-thirds">
+                <section class="column-header">
+                <div class="header-info">
+                    <h1 class="name">William Madden</h1>
+                    <h2 class="position">Web Developer</h2>
+                    <ul class="contact-info">
+                        <li class="phone"><a target="_blank" href="sms://503-708-7753"><i class="fas fa-phone"></i>503-708-7753</a></li>
+                        <li class="location"><a target="_blank" href="https://www.portlandoregon.gov/"><i class="fas fa-globe-americas"></i>PDX, OR</a></li>
+                        <li class="github"><a target="_blank" href="https://github.com/BillyDeeWilliams"><i class="fab fa-github"></i>Github Account</a></li>
+                        <li class="gmail"><a target="_blank" href="mailto:madden.william.d@gmail.com"><i class="fas fa-envelope"></i>madden.william.d@gmail.com</a></li>
+                    </ul>
+                </div>
             </section>
-          </div>
-        </footer>
+                <section id="exp" >
+                    <h2 class="section-heading">experience</h2>
+                    <ul class="exp-jobs">                      
+                      <li class="job-entry">
+                        <div class="job-card">
+                            <h3>Premium Web Support/ Front-End</h3>
+                            <h4>Dealer Spike: Lead Venture</h4>
+                            <div class="exp-position-stats">
+                                <span class="date-range"><i class="fa fa-calendar"></i>April 2022 - present</span>
+                                <span class="location"><a href="https://maps.app.goo.gl/jpwjoQFSupLQsTw9A"><i class="fas fa-map-marker"></i>Lake Oswego, Oregon</a></span>
+                            </div>
+                            <h5>Accomplishments and responsibilities</h5>
+                            <ul class="job-highlights">
+                              <li>Provide top-quality custom website suport for high priority customers</li>
+                              <li>Create and maintine inovative solutions providing an intuitve, user-friendly, interactive web experience for customers</li>
+                              <li>Identify and inderstand challanges facing customer base and develop custom solutions to meet the evolving business needs of a diverse clientele</li>
+                              <li>Consistently exceed target KPIs</li>
+                              <li>Spearhead transiton to a new CMS platofrm for cusomters and internal support team</li>
+                              <li>Utilize CRMs like Dynamics365 and Salesforce to work with crossfunctional partners</li>
+                              <li>Grow and develop internal documentaiton and pProvide training for junior team members</li>
+                            </ul>
+                        </div>
+                      </li>                                          
+                      <li class="job-entry">
+                            <div class="job-card">
+                                <h3>Front-End Developer</h3>
+                                <h4>Full Service Funnels</h4>
+                                <div class="exp-position-stats">
+                                    <span class="date-range"><i class="fa fa-calendar"></i>Oct 2021 - Jan 2022</span>
+                                    <span class="location"><a href="https://goo.gl/maps/nbi82hUmDCaAJNFD6"><i class="fas fa-map-marker"></i>Portland, Oregon</a></span>
+                                     - 
+                                    <span class="location">(contract)</span>
+                                </div>
+                                <h5>Accomplishments and responsibilities</h5>
+                                <ul class="job-highlights">
+                                    <li>Ceate and manage 1k+ web pages on a proprietary page-build platform</li>
+                                    <li>Update and optimize existing content, as well as develop new site templates and features</li>
+                                    <li>Troubleshoot and solve integration issues</li>
+                                    <li>Data analysis and system optimization </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="job-entry">
+                            <div class="job-card">
+                                <h3>Lead Front-End Developer</h3>
+                                <h4>Schoolhouse Electric CO.</h4>
+                                <div class="exp-position-stats">
+                                    <span class="date-range"><i class="fa fa-calendar"></i>Jan 2020 - Feb 2021</span>
+                                    <span class="location"><a href="https://goo.gl/maps/FCGFPkUmFYsZ7Y1h8"><i class="fas fa-map-marker"></i>Portland, Oregon</a></span>
+                                </div>
+                                <h5>Accomplishments and responsibilities</h5>
+                                <ul class="job-highlights">
+                                    <li>Maintain and manage Shopify eCommerce website for major producer and distributor of high-end  heirloom home lighting and appliances</li>
+                                    <li>Update and optimize existing content, as well as develop new site features</li>
+                                    <li>Plan and manage project from intial proposal through QA to deployment. Coordinating cross-department and cross-functionality communication while consitently meeting or exceeding deadlines</li>
+                                    <li>Cross platform and 3rd party integration</li>
+                                </ul>
+                            </div>
+                        </li>
+                            <li class="job-entry">
+                                <div class="job-card">
+                                    <h3>Front-End/ Technical Support</h3>
+                                    <h4>Dealer Spike</h4>
+                                    <div class="exp-position-stats">
+                                        <span class="date-range"><i class="fa fa-calendar"></i>Nov 2017 - Jan 2020</span>
+                                        <span class="location"><a href="https://goo.gl/maps/3859GU8ZCK73coUv7"><i class="fas fa-map-marker"></i>Wilsonville, Oregon</a></span>
+                                    </div>
+                                    <h5>Accomplishments and responsibilities</h5>
+                                    <ul class="job-highlights">
+                                        <li>Research, develop, and implement, plug-and-play Shopify eCommerce integration using Vue/Vuex to leverage the Shopify storefront Graphql API solution for the entire platform</li>
+                                        <li> Develop training curriculum and inhouse-developer documentation for open-source analytics platform</li>
+                                        <li>Develop strategies for creating custom conversion tracking to improve the accuracy and integrity of collected data</li>
+                                        <li>Consistently recognized for exceeding target KPIs</li>
+                                    </ul>
+                                </div>
+                            </li>
+                    </ul>
+                </section>
+               
+            </div>
+            <div class="column right-col col-one-thirds">
+                <section class="left-column-header column-header">
+                    <div class="img-wrapper">
+                        <a href="#"><img src="images\wdm-full-size-pwo.jpg" /></a>
+                    </div>
+                </section>
+                <section class="objective-summary">
+                    <!-- <h2  class="section-heading">Objective Summary</h2> -->
+                    <p>As a developer I seek to affect meaningful change in our world, using technology to bring people together in the spirit of collaboration and investigation to move towards ever better and more practical solutions; I believe there is always a solution to any given problem. </p>
+                </section>
+                <section id="technologies" class="technologies-section">
+                    <h2 class="section-heading">Skills</h2>
+                    <ul class="technologies">
+                            <li class="tech-subgroup languages">
+                                <h3 class="position">languages & frameworks</h3>
+                                <ul>
+                                    <li><i class="fab fa-node-js"></i><div>Node.js</div></li>
+                                    <li><i class="iconify" data-icon="logos:jest"></i>Jest</li>
+                                    <li><i class="iconify" data-icon="whh:ajax"></i>AJAX</li>
+                                    <li><i class="iconify" data-icon="logos:apollostack"></i>Apollo</li>
+                                    <li><i class="devicon-graphql-plain colored"></i>GraphQL</li>
 
-<style>
-:root {
-  --secondary: #5ad9ffa1    !important;
+                                    <li><i class="devicon-javascript-plain"></i>JS/ES6</li>
+                                    <li><i class="iconify" data-icon="vscode-icons:file-type-liquid"></i>Liquid</li>
+                                    <li><i class="iconify" data-icon="logos:react"></i>React</li>
+                                    <li><i class="iconify" data-icon="logos:vue"></i>Vue</li> 
+
+                                    <li><i class="devicon-html5-plain"></i>HTML5</li>
+                                    <li><i class="devicon-css3-plain"></i>CSS3</li>
+                                    <li><i class="devicon-sass-original"></i>SCSS/LESS</li>
+                                                                   
+                                </ul>
+                            </li>
+                            <li class="tech-subgroup design">
+                                <h3 class="position">UI & Design Tools</h3>
+                                <ul>
+                                    <li><i class="devicon-sketch-line"></i>Sketch</li>
+                                    <li><i class="devicon-photoshop-plain"></i>Photoshop</li>
+                                    <li><i class="devicon-figma-plain"></i>Figma</li>
+                                </ul>
+                            </li>
+                            <li class="tech-subgroup project-managment">
+                                <h3 class="position">Project managment & CMS platforms</h3>
+                                <ul>
+                                    <li><i class="devicon-git-plain"></i>Git</li>
+                                    <li><i class="devicon-trello-plain"></i>Trello</li>
+                                    <li><i class="icon-heroku"></i>Heroku</li>
+                                    <li><i class="iconify" data-icon="logos:netlify"></i>Netlify</li>
+                                    <li><i class="iconify" data-icon="bx:bxl-shopify"></i>Shopify</li>
+                                    <li><i class="fab fa-hubspot"></i>Hubspot</li>
+                                </ul>
+                            </li>
+                    </ul>
+                </section>
+            </div>
+            <section id="recent-project" class="recent-project-section">
+                <h2  class="section-heading">Demo Projects</h2>
+                <ul class="recent-project">
+                    <li class="project">
+                        <div class="job-card">
+                            <h3 class="project-title">Taggable Search Functionality Demo</h3>
+                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://vue3-taggable-search.netlify.app/">Taggable Search  </a></p>
+                            <p class="project-description">FULL URL: https://vue3-taggable-search.netlify.app/</p>
+                            <p class="project-description">
+                                Type: Vue3 SPA (live/ demo)</p>
+                                <p class="project-description">        A SPA build with the Vue 3 framework using the composition API demonstrating  taggable search using a public RESTful JSON API to provide source data, using local storage to provide state persistence between sessions.  Search for a user by first or last name. Add tags to user entries which can be used to filter search results for name by tag as well.</p>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="job-card">
+                            <h3 class="project-title">Image Finder</h3>
+                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://unsplash-react-finder.netlify.com/">Image Search </a></p>
+                            <p class="project-description">FULL URL: https://unsplash-react-finder.netlify.com/</p>
+                            <p class="project-description">
+                                Type: React web app (live/ demo)</p>
+                                <p class="project-description">
+                                A simple React application for accessing the public 'unsplash' image API. Demonstrates Functional as well as Class-based component architecture. Simple and intuitive UI/UX leveraging CSS stylers like background-size and the newer Flex-box properties to accommodate varying image sizes and aspect-ratios for a uniform,  responsive view.</p>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="job-card">
+                            <h3 class="project-title">Birthday Card / fun with CSS</h3>
+                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://happy-birthday-tami.netlify.app">CSS Birthday Card </a></p>
+                            <p class="project-description">FULL URL: https://happy-birthday-tami.netlify.app/</p>
+                            <p class="project-description">
+                                Type: CSS demo; An interactive animated birthday greeting</p>
+                                <p class="project-description">
+                                    An interactive birthday greeting I made for my stepmother using CSS to create some passive animations and beautiful cartoons as well as a fun and intuitive UX using only CSS transitions and animation properties.</p>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="job-card">
+                            <h3 class="project-title">GraphQL Server</h3>
+                            <p class="project-description">API END-POINT: https://limitless-cliffs-60173.herokuapp.com/</p>
+                            <p class="project-description">
+                                Type: GraphQL API (live/ demo)</p>
+                                <p class="project-description">
+                                A quick Express-Graphql API/server deployed to Heroku. Hit endpoint with a tool like <a target="_blank" href="https://www.electronjs.org/apps/graphiql">Graphiql</a> to query the API and see the documentation. Here is an example query you can use to get started. To request an array of all book[objects] in the mock DB, each including a key-value pair for the id, name, and author's name, try sending this query as a POST request: </p>
+                                <blockquote>
+                                <pre>
+                                    <code> 
+{
+    books {
+        id
+        name
+        author {
+            name
+        }
+    }
 }
-.bg-secondary{
-  background-color: var(--bs-purple) !important;
-}
-</style>
+                                    </code>
+                                  </pre>
+                                </blockquote>
+                        </div>
+                    </li>
+                   
+                    <li class="project">
+                        <div class="job-card">
+                            <h3 class="project-title">File Watcher</h3>
+                            <p class="project-description">LINK: <a class="project-link" target="_blank" href="https://github.com/BillyDeeWilliams/netwatcher-client-server">nodeJS websockets file-wactcher repo</a></p>
+                            <p class="project-description">FULL URL: https://github.com/BillyDeeWilliams/netwatcher-client-server</p>
+                            <p class="project-description">
+                                Type: Github Repo (codebase)</p>
+                                <p class="project-description">
+                                Client and Server code base for Bash CLI NodeJs app that leverages web-socket connections to monitor remote file structure for file changes</p>
+                        </div>
+                    </li>
 
-<script src="./app.js"></script>
+                </ul>
+            </section>
+            <!-- <footer>
+                <h2>additional tool/tech experience</h2>
+                <ul>
+                    <li><i class="devicon-atom-original"></i></li>
+                    <li><i class="devicon-bash-plain"></i></li>
+                    <li><i class="devicon-bootstrap-plain"></i></li>
+                    <li><i class="devicon-cplusplus-plain"></i>
+                    </li>
+                    <li><i class="devicon-gimp-plain"></i>
+                    </li>
+                    <li><i class="devicon-github-original"></i>
+                    </li>
+                    <li><i class="devicon-handlebars-plain"></i>
+                    </li>
+                    <li><i class="devicon-krakenjs-plain"></i>
+                    </li>
+                    <li><i class="devicon-less-plain-wordmark"></i>
+                    </li>
+                    <li><i class="devicon-markdown-original"></i>
+                    </li>
+                    <li><i class="devicon-mongodb-plain"></i>
+                    </li>
+                    <li><i class="devicon-mysql-plain"></i>
+                    </li>
+                    <li><i class="devicon-msdos-line"></i>
+                    </li>
+                    <li><i class="devicon-npm-original-wordmark"></i>
+                    </li>
+                    <li><i class="devicon-nuxtjs-plain"></i>
+                    </li>
+                    <li><i class="devicon-python-plain"></i>
+                    </li>
+                    <li><i class="devicon-ruby-plain"></i>
+                    </li>
+                    <li><i class="devicon-redux-original"></i>
+                    </li>
+                    <li><i class="devicon-vscode-plain"></i>
+                    </li>
+                    <li><i class="devicon-webpack-plain"></i>
+                    </li>
+                    <li><i class="devicon-yarn-plain"></i>
+                    </li>
 
-<!-- jQuery library -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
-
-
-</body>
-
+                </ul>
+            </footer> -->
+        </main>
+    </body>
 </html>
+<!-- TODO:  -->
+<!-- *********************
+**  Add screenshots for projects
+**  add github for shopify project- fix links and uncomment
+**  update company name before submission
+** css QC and pdf/print view
+*************************-->
